@@ -38,6 +38,7 @@ conPin.csv
 LatheN.elf.launch
 libopencm3/
 *.lst
-STM32F446RE_FLASH.ld
-/stm32f446xx.h
+/stm32f746xx.h
 LatheN.gpdsc
+
+~$LatheCPP7N.xlsx

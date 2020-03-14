@@ -60,6 +60,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define DbgC_Pin GPIO_PIN_2
+#define DbgC_GPIO_Port GPIOE
+#define DbgD_Pin GPIO_PIN_4
+#define DbgD_GPIO_Port GPIOE
 #define ZFlag_Pin GPIO_PIN_3
 #define ZFlag_GPIO_Port GPIOF
 #define XFlag_Pin GPIO_PIN_4
@@ -90,6 +94,10 @@ void Error_Handler(void);
 #define XB_Pin GPIO_PIN_15
 #define XB_GPIO_Port GPIOF
 #define XB_EXTI_IRQn EXTI15_10_IRQn
+#define DbgA_Pin GPIO_PIN_0
+#define DbgA_GPIO_Port GPIOG
+#define DbgB_Pin GPIO_PIN_1
+#define DbgB_GPIO_Port GPIOG
 #define Uart7Rx_Pin GPIO_PIN_7
 #define Uart7Rx_GPIO_Port GPIOE
 #define Uart7Tx_Pin GPIO_PIN_8
