@@ -42,3 +42,7 @@ libopencm3/
 LatheN.gpdsc
 
 ~$LatheCPP7N.xlsx
+
+*.gpdsc
+
+*.xlsx

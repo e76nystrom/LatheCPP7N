@@ -1,4 +1,4 @@
-#if defined(__STM32F4xx_HAL_H) || defined( __STM32F7xx_HAL_H)
+#if defined(__STM32F4xx_HAL_H) || defined(__STM32F7xx_HAL_H) || defined(STM32H7xx_HAL_H)
 #if !defined(__TIMERS_H)
 #define __TIMERS_H
 
@@ -17,9 +17,9 @@ spindleTmr  8
 spindlePwm  1
 usecTmr     6
 encTestTmr  7
-indexTmr    10
 intTmr      9
 intTmrPwm   0
+indexTmr    10
 cmpTmr      11
 pwmTmr      12
 pwmTmrPwm   2
@@ -45,9 +45,9 @@ pwmTmrIsr   TIM8_BRK_TIM12
 #define SPINDLE_PWM1
 #define USEC_TMR_TIM6
 #define ENC_TMR_TIM7
-#define INDEX_TMR10
 #define INT_TMR9
 #define INT_TMR_PWM0
+#define INDEX_TMR10
 #define CMP_TMR11
 #define PWM_TMR12
 #define PWM_TMR_PWM2

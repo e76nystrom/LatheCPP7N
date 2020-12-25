@@ -50,8 +50,6 @@ extern "C" {
 
 /* USER CODE END EM */
 
-void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
-
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -72,8 +70,8 @@ void Error_Handler(void);
 #define Dir4_GPIO_Port GPIOF
 #define Pin15_Pin GPIO_PIN_10
 #define Pin15_GPIO_Port GPIOF
-#define Step2A_Pin GPIO_PIN_3
-#define Step2A_GPIO_Port GPIOA
+#define Step2a_Pin GPIO_PIN_3
+#define Step2a_GPIO_Port GPIOA
 #define Pin1_Pin GPIO_PIN_5
 #define Pin1_GPIO_Port GPIOA
 #define Pin17_Pin GPIO_PIN_6
@@ -106,8 +104,8 @@ void Error_Handler(void);
 #define Dbg5_GPIO_Port GPIOE
 #define Pin12_Pin GPIO_PIN_10
 #define Pin12_GPIO_Port GPIOE
-#define Dbg3_Pin GPIO_PIN_11
-#define Dbg3_GPIO_Port GPIOE
+#define SPI_SEL_Pin GPIO_PIN_11
+#define SPI_SEL_GPIO_Port GPIOE
 #define SPI_SCK_Pin GPIO_PIN_12
 #define SPI_SCK_GPIO_Port GPIOE
 #define SPI_MISO_Pin GPIO_PIN_13
@@ -162,8 +160,8 @@ void Error_Handler(void);
 #define Pin14_GPIO_Port GPIOC
 #define Dir5_Pin GPIO_PIN_9
 #define Dir5_GPIO_Port GPIOC
-#define Step2B_Pin GPIO_PIN_8
-#define Step2B_GPIO_Port GPIOA
+#define Step2b_Pin GPIO_PIN_8
+#define Step2b_GPIO_Port GPIOA
 #define Dir1_Pin GPIO_PIN_9
 #define Dir1_GPIO_Port GPIOA
 #define Dir3_Pin GPIO_PIN_5

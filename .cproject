@@ -35,7 +35,7 @@
                         						
                         <toolChain errorParsers="" id="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug.388607074" name="Cross ARM GCC" nonInternalBuilderId="ilg.gnuarmeclipse.managedbuild.cross.builder" superClass="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug">
                             							
-                            <option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.1418002574" name="Optimization Level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.debug" valueType="enumerated"/>
+                            <option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.1418002574" name="Optimization Level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.most" valueType="enumerated"/>
                             							
                             <option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength.174970630" name="Message length (-fmessage-length=0)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength" useByScannerDiscovery="true" value="true" valueType="boolean"/>
                             							
@@ -87,7 +87,7 @@
                             							
                             <option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize.1423831672" name="Print size" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                             							
-                            <option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.709499464" name="FPU Type" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+                            <option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.709499464" name="FPU Type" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv5spd16" valueType="enumerated"/>
                             							
                             <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.1609083727" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
                             							
@@ -297,6 +297,10 @@
                                 								
                                 <option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.useprintffloat.539719238" name="Use float with nano printf (-u _printf_float)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.useprintffloat" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
+                                <option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.printmap.348454003" name="Print link map (-Xlinker --print-map)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.printmap" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                                								
+                                <option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.cref.1063302515" name="Cross reference (-Xlinker --cref)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.cref" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+                                								
                                 <inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input.1808232291" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input">
                                     									
                                     <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -337,15 +341,11 @@
                     					
                     <sourceEntries>
                         						
-                        <entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="Drivers/STM32F7xx_HAL_Driver"/>
+                        <entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="Drivers/STM32F7xx_HAL_Driver/Src"/>
                         						
-                        <entry excluding="Drivers/CMSIS/RTOS|TrueSTUDIO|src|Drivers/STM32F7xx_HAL_Driver/Src|Drivers/CMSIS/Device/ST/STM32F7xx/Source|Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Inc"/>
+                        <entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="Src"/>
                         						
-                        <entry excluding="i2c.cpp|system_stm32f4xx.c|stm32f4xx_rcc.c|stm32f4xx_it.c|stm32f4xx_i2c.c|stm32f4xx_hal_msp.c|stm32f4xx_gpio.c|startup_stm32f407xx.S|handler.S|startup_stm32f707xx.S|system_stm32f7xx.c|main.c|stm32f7xx_it.c|stm32f7xx_hal_msp.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="LatheSrc"/>
-                        						
-                        <entry excluding="Drivers/CMSIS/RTOS|TrueSTUDIO|src|Drivers/STM32F7xx_HAL_Driver/Src|Drivers/CMSIS/Device/ST/STM32F7xx/Source|Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Src"/>
-                        						
-                        <entry excluding="system_stm32f7xx.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+                        <entry excluding="handler.S" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="lathe_src"/>
                         					
                     </sourceEntries>
                     				
